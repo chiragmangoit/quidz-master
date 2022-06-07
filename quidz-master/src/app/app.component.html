@@ -1,4 +1,5 @@
 <app-header></app-header>
+<ng-container *ngIf="!showMore;else eventPage">
 <app-slider></app-slider>
 <app-form></app-form>
 <app-simple-slider></app-simple-slider>
@@ -7,8 +8,9 @@
 <app-slider-hover></app-slider-hover>
 <app-travel></app-travel>
 <app-application></app-application>
+</ng-container>
 <app-footer></app-footer>
-<app-products  *ngIf="!showMore;else eventPage" (newItemEvent)="addItem($event)" [amount]="cartValue"></app-products>
+<app-products (newItemEvent)="addItem($event)" [amount]="cartValue"></app-products>
 <ng-template #eventPage>
     <app-event-details></app-event-details>
 </ng-template>
