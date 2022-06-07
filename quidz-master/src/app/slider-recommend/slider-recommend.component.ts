@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { Slider } from '../models/slider.model';
-import { Headings } from '../models/heading.model';
 
 @Component({
   selector: 'app-slider-recommend',
@@ -10,20 +8,14 @@ import { Headings } from '../models/heading.model';
 })
 export class SliderRecommendComponent {
   
-  head:Headings[] = [
-    new Headings( 'Most Loved By Parents' ),
-    new Headings( 'Editor’s Picks This Week' ),
-    new Headings( 'Try Something New in 2021' ),
-  ]
-
-  slide:Slider[] = [
-    new Slider( '../../assets/img/banner-ad/image_01.jpg', 'What we learn from cooking with children'),
-    new Slider( '../../assets/img/banner-ad/image_02.jpg', 'Kidzania Back to school offer In Dubai'),
-    new Slider( '../../assets/img/banner-ad/image_03.jpg', 'Pumpkin cooking party with children'),
-    new Slider( '../../assets/img/banner-ad/image_04.jpg', 'Dubai events in july: DSS D3 Restaurant')
-  ]
-
-  constructor() { }
+  value = 1;
+  @Input() slides = [];
+  @Output() newReadMoreEvent = new EventEmitter<number>();
+  
+  eventInformation() {
+    this.newReadMoreEvent.emit(this.value);
+  }
+  
  customOptions: OwlOptions = {
   dots: false,
   loop: true,

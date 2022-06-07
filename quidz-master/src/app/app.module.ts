@@ -17,9 +17,26 @@ import { TravelComponent } from './travel/travel.component';
 import { ApplicationComponent } from './application/application.component';
 import { SubAppComponent } from './application/sub-app/sub-app.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductsComponent } from './products/products.component';
+import { EventDetailsComponent } from './event-details/event-details.component';
+import { PageHeaderComponent } from './event-details/page-header/page-header.component';
+import { EventDetailMainComponent } from './event-details/event-detail-main/event-detail-main.component';
+import { EventRightSideComponent } from './event-details/event-right-side/event-right-side.component';
+import { ShareExpComponent } from './event-details/event-right-side/share-exp/share-exp.component';
+import { RelatedActivityComponent } from './event-details/event-right-side/related-activity/related-activity.component';
+import { PrimaryDetailComponent } from './event-details/event-detail-main/primary-detail/primary-detail.component';
+import { SecondaryDetailComponent } from './event-details/event-detail-main/secondary-detail/secondary-detail.component';
+import { ThirdDetailComponent } from './event-details/event-detail-main/third-detail/third-detail.component';
+import { EventWidgetComponent } from './event-details/event-detail-main/event-widget/event-widget.component';
+import { EventScheduleWidgetComponent } from './event-details/event-detail-main/event-schedule-widget/event-schedule-widget.component';
+import { ReviewComponent } from './event-details/event-detail-main/review/review.component';
+import { WidjetComponent } from './event-details/event-detail-main/review/widjet/widjet.component';
+import { FormInnerComponent } from './event-details/event-detail-main/review/form/form.component';
+import { ShareSectionComponent } from './event-details/event-detail-main/primary-detail/share-section/share-section.component';
+import { TermsConditionComponent } from './event-details/event-detail-main/primary-detail/terms-condition/terms-condition.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [			
     AppComponent,
       HeaderComponent,
       SubHeaderComponent,
@@ -33,7 +50,24 @@ import { FooterComponent } from './footer/footer.component';
       TravelComponent,
       ApplicationComponent,
       SubAppComponent,
-      FooterComponent
+      FooterComponent,
+      ProductsComponent,
+      EventDetailsComponent,
+      PageHeaderComponent,
+      EventDetailMainComponent,
+      EventRightSideComponent,
+      ShareExpComponent,
+      RelatedActivityComponent,
+      PrimaryDetailComponent,
+      SecondaryDetailComponent,
+      ThirdDetailComponent,
+      EventWidgetComponent,
+      EventScheduleWidgetComponent,
+      ReviewComponent,
+      WidjetComponent,
+      FormInnerComponent,
+      ShareSectionComponent,
+      TermsConditionComponent
    ],
   imports: [
     BrowserModule,
