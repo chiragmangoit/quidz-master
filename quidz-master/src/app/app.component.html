@@ -18,9 +18,9 @@
 
 <div *ngIf="itemAmount" class="cl-12 my-3">
     <hr>
-    <p>{{itemAmount}}</p>
-    <button class="btn-success mr-3" (click)="increase()">Increase</button>
-    <button class="btn-warning" (click)="decrease()">Decrease</button>
+    <p>Quantity:{{itemAmount}}</p>
+    <button class="btn btn-success mr-3" (click)="increase()">Increase</button>
+    <button class="btn btn-warning" (click)="decrease()">Decrease</button>
 </div>
 
 <div (click)="scrollToTop()" class="scroll-to-top" *ngIf="pageYoffset > 0" >
