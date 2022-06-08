@@ -34,6 +34,9 @@ import { WidjetComponent } from './event-details/event-detail-main/review/widjet
 import { FormInnerComponent } from './event-details/event-detail-main/review/form/form.component';
 import { ShareSectionComponent } from './event-details/event-detail-main/primary-detail/share-section/share-section.component';
 import { TermsConditionComponent } from './event-details/event-detail-main/primary-detail/terms-condition/terms-condition.component';
+import { LoginRegistrationComponent } from './login-registration/login-registration.component';
+import { LoginComponent } from './login-registration/login/login.component';
+import { RegestrationComponent } from './login-registration/regestration/regestration.component';
 
 @NgModule({
   declarations: [			
@@ -67,7 +70,10 @@ import { TermsConditionComponent } from './event-details/event-detail-main/prima
       WidjetComponent,
       FormInnerComponent,
       ShareSectionComponent,
-      TermsConditionComponent
+      TermsConditionComponent,
+      LoginRegistrationComponent,
+      LoginComponent,
+      RegestrationComponent
    ],
   imports: [
     BrowserModule,
